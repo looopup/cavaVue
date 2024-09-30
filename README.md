@@ -467,3 +467,10 @@ export default router;
 </template>
 <script setup lang="ts"></script>
 ```
+![image](https://github.com/user-attachments/assets/5fdc38c2-456a-45e8-9b18-3f6e5f117b4b)
+
+------------------ 到此第2阶段，系统框架搭完成，下面填充页面内容 -----------------
+
+
+
+
