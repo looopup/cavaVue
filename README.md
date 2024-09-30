@@ -1,8 +1,8 @@
 # cavaVue
 
-一个用vite搭建的vue3+TS系统前端框架，使用Element Plus、Pinia、Vue Router、Axios、sass等组件。
+一个用vite搭建的vue3+TS系统前端框架，使用了Element Plus、Pinia、Vue Router、Axios、sass等组件。
 
-第一步：确认使用哪些组件。
+第一步：确认使用哪些组件。  
 第二步：用vite创建vue3+ts项目：
 ```
 npm create vite@latest cavaVue -- --template vue-ts
@@ -14,7 +14,7 @@ npm install
 npm install element-plus pinia vue-router axios sass
 ```
 第四步：配置组件：
-**配置 Vue Router**
+**配置 Vue Router**  
 1、在 src 目录下创建一个 router 文件夹，并在其中创建 index.ts 文件，代码如下：
 ```
 typescript
@@ -74,7 +74,7 @@ About.vue
 </style>
 ```
 
-**配置 Pinia**
+**配置 Pinia**  
 1、在 src 目录下创建一个 store 文件夹，并在其中创建 index.ts 文件，代码如下：
 ```typescript
 // src/store/index.ts
@@ -95,7 +95,7 @@ app.use(pinia);
 app.use(ElementPlus);
 app.mount('#app');
 ```
-**配置 Axios**
+**配置 Axios**  
 创建一个 src/services 目录，并创建一个简单的 Axios 实例配置文件axios.ts：
 ```typescript
 // src/services/axios.ts
@@ -129,7 +129,7 @@ instance.interceptors.response.use(
 
 export default instance;
 ```
-**使用 Sass**
+**使用 Sass**  
 如在 Home.vue 中，你可以把下面：
 ```vue
 <style scoped>
@@ -146,7 +146,7 @@ npm run dev
 ```
 在浏览器中访问 http://localhost:5173，可以看到 Vue 3 项目已经可以正常访问。
 
-**FAQ：**
+**FAQ：**  
 第一次运行起来看到的页面可能不是满屏，这时需要调一下..\src\style.css，两个地方：
 ```css
 body {
@@ -167,7 +167,7 @@ body {
 
 ---------------   到这里是第一阶段完成，下面是基于elementplus设计出系统框架  -----------------
 
-第六步：登录页面（用户名、密码、登录按钮），从longin跳转到home
+第六步：登录页面（用户名、密码、登录按钮），从longin跳转到home  
 1、在 src/views 目录下创建一个新的 Login.vue 文件，内容如下：
 ```vue
 <template>
@@ -223,9 +223,9 @@ const handleSubmit = () => {
 ```
 3、浏览器中访问：http://localhost:5173/login，然后直接点登录，然后跳转到home页面。
 
-第七步：系统布局
-1、login后跳转到home页面，home页面一般理解为首页，它应该是嵌入显示在一个页面布的局中。
-我们把这个布局页面叫做layout，布局：左边菜单栏，右边又分上中下。
+第七步：系统布局  
+1、login后跳转到home页面，home页面一般理解为首页，它应该是嵌入显示在一个页面布的局中。  
+我们把这个布局页面叫做layout，布局：左边菜单栏，右边又分上中下。  
 创建文件 src/views/layout.vue，内容如下：
 ```vue
 <template>
@@ -428,7 +428,7 @@ const router = createRouter({
 
 export default router;
 ```
-3、设计的菜单中有一个 系统管理 的一级菜单，下面有4个二级菜单：用户管理、角色管理、权限管理、字典管理。
+3、设计的菜单中有一个 系统管理 的一级菜单，下面有4个二级菜单：用户管理、角色管理、权限管理、字典管理。  
 添加4个菜单对应的页面：
 ../views/UserManagement.vue
 ```vue
