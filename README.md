@@ -13,7 +13,7 @@ cd cavaVue
 npm install
 npm install element-plus pinia vue-router axios sass
 ```
-第四步：配置组件：
+第四步：配置组件：  
 **配置 Vue Router**  
 1、在 src 目录下创建一个 router 文件夹，并在其中创建 index.ts 文件，代码如下：
 ```
@@ -129,6 +129,7 @@ instance.interceptors.response.use(
 
 export default instance;
 ```
+
 **使用 Sass**  
 如在 Home.vue 中，你可以把下面：
 ```vue
